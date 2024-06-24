@@ -39,7 +39,6 @@ public class DeathBanCommand implements TabExecutor {
       }
 
       PlayerData data = plugin.getSDatabase().getData(player.getUniqueId());
-      data.setDeaths(0);
       data.setBan(null);
       plugin.getSDatabase().save(data);
 
