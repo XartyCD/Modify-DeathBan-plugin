@@ -1,3 +1,5 @@
+Изменить только build.gradle на:
+
 plugins {
     id 'java'
 }
@@ -35,3 +37,12 @@ java {
         languageVersion = JavaLanguageVersion.of(17) // Используем более стабильную версию JDK
     }
 }
+
+
+
+
+Компиляция в .jar через gradle 8.8:
+
+1) gradle clean
+
+2) gradle build  
